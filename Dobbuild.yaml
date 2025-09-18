@@ -24,7 +24,7 @@ environment:
   CROWSTORE_TOKEN_CLIIMAGE: { value: 47442d880e1a070ebf20cc6b818db56b }
 
 jobs:
-- name: CROW CLI BUILD - DEZ
+- name: CROW CLI BUILD - Dez
   stages:
   - name: Updating Runner Server
     tasks:
@@ -62,3 +62,5 @@ jobs:
         provider: azure
         image_name: env=IMAGE_NAME
         image_tag: V0.1.40
+        username: env=DOCKER_USERNAME
+        password: env=DOCKER_PASSWORD
